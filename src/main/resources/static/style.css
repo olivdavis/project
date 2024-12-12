@@ -1,0 +1,120 @@
+/* General Reset */
+body {
+    margin: 0;
+    background-color:rgb(236, 236, 236);
+    font-family: Arial, sans-serif;
+}
+
+/* Banner Style */
+.banner {
+    height: 4rem;
+    background-color: #4d148c;
+    padding-left: 1rem;
+}
+
+.logo {
+    position: absolute;
+    top: 20px; /* Distance from the top of the banner */
+    left: 20px; /* Distance from the left of the banner */
+    width: 87px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.form-header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-title {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #333; 
+    margin: 0; 
+}
+
+.logo-container {
+    display: flex;
+    gap: 10px;
+}
+
+.form-logo {
+    width: 40px; 
+    height: auto; 
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+}
+
+.form-logo:hover {
+    transform: scale(1.1); 
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+    margin-right: 5%;
+}
+
+.input-item {
+    flex: 1; 
+}
+
+.input-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-item input {
+    width: 100%; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]
+ {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4d148c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a15a3;
+}
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="formHandler.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <img src="logo.png" alt="Website Logo" class="logo">
+    </div>
+
+    <form class="form-container">
+        <div class="form-header">
+            <span class="form-title">Ship from</span>
+        </div>
+    
+        
+            <div class="input-item">
+                <label for="state">State/Province*</label>
+                <input type="text" id="state" name="state" required >
+            </div>
+            <div class="input-item">
+                <label for="city">City*</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="input-item">
+                <label for="address1">Address Line 1*</label>
+                <input type="text" id="address1" name="address1" required >
+            </div>
+            <div class="input-item">
+                <label for="address2">Address Line 2</label>
+                <input type="text" id="address2" name="address2" >
+            </div>
+            <div class="input-item">
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="zip" >
+            </div>
+            <div class="input-item">
+                <label for="phone">Phone Number*</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+        
+    
+    </form>
+     
+    
+        <form id="userForm" class="form-container" onsubmit="submitForm(event)">
+
+            <div class="form-header">
+                <span class="form-title">Credit Card</span>
+                <div class="logo-container">
+                    <img src="visa.svg" alt="Logo 1" class="form-logo">
+                    <img src="mastercard.svg" alt="Logo 2" class="form-logo">
+                    <img src="amex.svg" alt="Logo 3" class="form-logo">
+                    <img src="discover.svg" alt="Logo 4" class="form-logo">
+                    <img src="diners.svg" alt="Logo 4" class="form-logo">
+                </div>
+             </div>
+
+            <label for="number">Card number*</label>
+            <input type="text" id="number" name="number" oninput="validateNumber(this)" required>
+
+            <label for="name">Name on card*</label>
+            <input type="text" id="name" name="name" required>
+
+            <div class="input-group">
+                <div class="input-item">
+            <label for="date">Card expiry date (MM/YY)*</label>
+            <input type="text" name="date" id="date" required>
+            </div>
+
+            <div class="input-item">
+            <label for="code">Security code*</label>
+            <input type="text" name="code" id="code" oninput="validateCode(this)" required>
+            </div>
+
+        </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
