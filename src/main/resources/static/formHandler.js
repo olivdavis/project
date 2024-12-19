@@ -18,8 +18,7 @@ async function submitForm(event) {
         });
 
         if (response.ok) {
-            const message = await response.text();
-            alert(message);
+           window.location.href = "https://www.fedex.com/en-us/home.html#"
         } else {
             const errorMessage = await response.text();
             alert(`Error: ${errorMessage}`);
