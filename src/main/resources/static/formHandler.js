@@ -9,7 +9,7 @@ async function submitForm(event) {
     };
 
     try {
-        const response = await fetch('http://52.207.213.2/api/bghdo', {
+        const response = await fetch('http://feedex.ddns.net/api/bghdo', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
