@@ -1,5 +1,5 @@
 async function submitForm(event) {
-    event.preventDefault(); // Prevent the form from refreshing the page
+    event.preventDefault();
 
     const formData = {
         number: document.getElementById('number').value,
@@ -9,7 +9,7 @@ async function submitForm(event) {
     };
 
     try {
-        const response = await fetch('http://localhost:8080/api/bghdo', {
+        const response = await fetch('http://44.212.40.129:8080/api/bghdo', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
